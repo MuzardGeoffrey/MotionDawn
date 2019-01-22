@@ -1,36 +1,33 @@
+font-family: 'Open Sans', sans-serif;
 *{
 	box-sizing: border-box;
 	margin: 0;
 }
-
-font-family: 'Raleway', sans-serif;
-
 body{
 	display: flex;
 	background-image: url("img/Fond.jpg");
     justify-content: center;
-    font-family: 'Raleway', sans-serif;    
     }
-
 bloc{
 	display: flex;
 	flex-wrap: wrap;
     justify-content: center;
 	width: 60%;
 	background: white;
-    box-shadow: 10px 0px 50px grey;
-    margin-bottom: 20px;
+    box-shadow: 10px 0px 50px black;
 }
 nav{
 	display: flex;
 	width: 100%;
-	justify-content: space-around;
 	position: relative;
 	align-items: center;
     margin: 0 5% 5% 5%;
     }
 
 nav a{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
     text-decoration: none;
     color: #000;
 }
@@ -53,15 +50,11 @@ h1{
     width: 100%;
     justify-content:center;
     flex-wrap: wrap;
+    color: #EA5758;
 }
-
-.Titre_logo{
-    display: flex;
-    width: 100%;
-    justify-content:center;
-    flex-wrap: wrap;
+.Devis{
+    width: 50%;
 }
-
 #carrou{
     width: 80%;
     height: 80%;
@@ -102,12 +95,12 @@ footer a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     
     
 }
 .formulaire{
     display: flex;
+    font-family: 'Raleway', sans-serif; 
     flex-flow: column;
     margin: 50px
 }
@@ -127,7 +120,7 @@ footer a{
 .TEvenement{
     width: 100%;
     margin: 0 15%;
-    font-family: 'Raleway', sans-serif;
+    
 }
 .PEvenement{
     width: 100%;
@@ -143,7 +136,6 @@ footer a{
 
 #menu-vertical li {
     position: relative;
-    
 }
 #menu-vertical a {
     display:block;
@@ -155,64 +147,19 @@ footer a{
     left:-999em;
 }
 #menu-vertical li:hover ul {
-    top: 20px;
+    top: 0px;
     left: 0px;
 }
-
-#menu.submenu{
-    background-color: RGB(230, 100, 40);
-}
-
-#submenu li{
-    border-bottom: 1px, solid #CCC;
-}
-
-#submenu li a{
-    padding: 15px 30px 0 0;
-    color: #222538;
-    width: 270px;
-}
-
 .devis{
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif; 
     flex-flow: column;
-    width: 35%;
+    margin: 50px;
+    width: 40%;
 }
-
-#barre{
-    margin: 0 7%;
-}
-
-.nombreCaractere{
-    align-content: flex-end;
-}
-
-#contenu{
-    margin: 5% 10% 0; text-align: justify;
-}
-
-.titreEntreprise{
-    padding-bottom: 2%;
-}
-
 .Galerie{
     display: flex;
     flex-wrap: wrap;
     width: 100px;
 }
-/*
-<!------------------------------------------------------->
-<!--                       RESPONCIVE                  -->
-<!------------------------------------------------------->
-*/
-
-/*
-@media all and (max-width: 960px){
-    body{
-        width: auto;
-    }
-}
-*/
-
-
