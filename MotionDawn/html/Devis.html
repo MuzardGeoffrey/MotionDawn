@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8">
+        <meta name="keywords" lang="fr" content="html,php,css">
+        <meta name="author" lang="fr" content="Muzard Geoffrey">
+        <!--  IMPORT .CSS       -->
+        <link href="css/style.css" rel="stylesheet">
+        <!--  IMPORT FONTS      -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+	<title>MotionDawn - Devis</title>
+</head>
+<body>
+    <bloc>
+<!------------------------------------------------------->
+<!--               MENU DE NAVIGATION                  -->
+<!------------------------------------------------------->
+        <nav>
+            <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt="logo"></a>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <img src="img/Barre.PNG">
+            <ul id="menu-vertical">
+               <li id="menu"><a href="#">Evènement</a>
+                  <ul id="submenu">
+                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                     <li><a href="Lancement.html">Lancements de Produits</a></li>
+                     <li><a href="TeamBuilding.html">Team Building</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <img src="img/Barre.PNG">
+            <a href="galerie.html" title="Galerie">Galerie</a>
+            <img src="img/Barre.PNG">
+            <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
+            <img src="img/Barre.PNG">
+            <a href="Equipe.html" title="Equipe">L'équipe</a>
+            <img src="img/Barre.PNG">
+            <a href="Devis.html" title="Devis">Contact</a>
+        </nav>
+        <div id=ContactDevis>
+<!------------------------------------------------------->
+<!--                   Contactez-Nous                  -->
+<!------------------------------------------------------->
+            <section class="devis">
+                <h1>Contactez Nous</h1>
+                <label for="nom">
+                    <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
+                </label>
+                <label for="mail">
+                    <input type="email" name="mail" id="mail" placeholder="Adresse email de contact"/>
+                </label>
+                <label for="objet">
+                    <input type="text" name="objet" id="objet" placeholder="Objet"/>
+                </label>
+                <label for="demande">
+                    <small class="nombreCaractere">
+                        (<span data-hook="remaining">4000</span> Caractère restants)
+                    </small>
+                    <textarea name="inforamtion" id="information" placeholder="Taper votre demande" rows="15" cols="60%"></textarea>
+                </label>
+                <input type="submit" value="Envoyer" />
+            </section>
+            
+            <img id="barre" src="img/Barre_Contact.PNG" />
+<!------------------------------------------------------->
+<!--                        Devis                      -->
+<!------------------------------------------------------->
+            <section class="devis">
+                <h1>Devis</h1>
+                <label for="entreprise">
+                    <input type="text" name="entreprise" id="entreprise" class="entreprise" placeholder="Nom de votre Entreprise"/>
+                </label>
+                <label for="nom">
+                    <input type="text" name="nom" id="nom" class="champs" placeholder="Nom"/>
+                </label>
+                <label for="prenom">
+                    <input type="text" name="prenom" id="prenom" class="champs" placeholder="Prenom"/>
+                </label>
+                <label for="adresse">
+                    <input type="text" name="adresse" id="adresse" class="champs" placeholder="Adresse de la société"/>
+                </label>
+                <label for="code">
+                    <input type="text" name="code" id="code" class="champs" placeholder="Code Postal"/>
+                </label>
+                <label for="ville">
+                    <input type="text" name="ville" id="ville" class="champs" placeholder="Ville"/>
+                </label>
+                <label for="email">
+                    <input type="email" name="email" id="email" class="champs" placeholder="Email"/>
+                </label>                
+                <label for="telephone">
+                    <input type="text" name="telephone" id="telephone" class="champs" placeholder="Telephone"/>
+                </label>
+                <label for="date">
+                    <input type="text" name="date" id="date" placeholder="Date de l'évènement"/>
+                </label>
+                <label for="objet">
+                    <input type="text" name="objet" id="objet" placeholder="Objet"/>
+                </label>
+                <label for="adresseEvenement">
+                    <input type="text" name="adresseEvenement" id="adresseEvenement" class="champs" placeholder="Adresse de l'évènement (Facultatif)"/>
+                </label>
+                <label for="demande">
+                    <small class="nombreCaractere">
+                        (<span data-hook="remaining">4000</span> Caractère restants)
+                    </small>
+                    <textarea name="inforamtion" id="information" placeholder="Détaillez votre évènement" rows="15" cols="60%"></textarea>
+                </label>
+                <input type="submit" value="Envoyer" />
+            </section>
+        </div>
+<!------------------------------------------------------->
+<!--                      FOOTER                       -->
+<!------------------------------------------------------->
+        <footer>
+            <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
+            <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
+            <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
+        </footer>
+        </bloc>
+    </body>
+</html>
