@@ -1,33 +1,33 @@
-font-family: 'Open Sans', sans-serif;
 *{
-	box-sizing: border-box;
-	margin: 0;
+	box-sizing: border-box; margin: 0;
 }
+
 body{
 	display: flex;
 	background-image: url("img/Fond.jpg");
     justify-content: center;
+    font-family: 'Raleway', sans-serif;    
     }
+
 bloc{
 	display: flex;
 	flex-wrap: wrap;
     justify-content: center;
 	width: 60%;
 	background: white;
-    box-shadow: 10px 0px 50px black;
+    box-shadow: 10px 0px 50px grey;
+    margin-bottom: 20px;
 }
 nav{
 	display: flex;
 	width: 100%;
+	justify-content: space-around;
 	position: relative;
 	align-items: center;
     margin: 0 5% 5% 5%;
     }
 
 nav a{
-    display: flex;
-    justify-content: space-around;
-    width: 15%;
     text-decoration: none;
     color: #000;
 }
@@ -39,6 +39,7 @@ nav a{
     margin-bottom: 10%;
 }
 h1{
+    margin-bottom: 5%;
     display: flex;
     width: 100%;
     justify-content:center;
@@ -50,11 +51,16 @@ h1{
     width: 100%;
     justify-content:center;
     flex-wrap: wrap;
-    color: #EA5758;
 }
-.Devis{
-    width: 50%;
+
+.Titre_logo{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    flex-wrap: wrap;
 }
+
 #carrou{
     width: 80%;
     height: 80%;
@@ -73,6 +79,7 @@ footer{
 }
 footer a{ 
     color: #EA5758;
+    text-decoration: none;
 }
 #equipe{
     display: flex;
@@ -95,14 +102,13 @@ footer a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     
     
 }
 .formulaire{
     display: flex;
-    font-family: 'Raleway', sans-serif; 
     flex-flow: column;
-    margin: 50px
 }
 #evenement{
 	display: flex;
@@ -120,7 +126,7 @@ footer a{
 .TEvenement{
     width: 100%;
     margin: 0 15%;
-    
+    font-family: 'Raleway', sans-serif;
 }
 .PEvenement{
     width: 100%;
@@ -136,6 +142,7 @@ footer a{
 
 #menu-vertical li {
     position: relative;
+    
 }
 #menu-vertical a {
     display:block;
@@ -147,19 +154,52 @@ footer a{
     left:-999em;
 }
 #menu-vertical li:hover ul {
-    top: 0px;
+    top: 20px;
     left: 0px;
+    font-size: 1px;
 }
+
+#menu.submenu{
+    background-color: RGB(230, 100, 40);
+}
+
+#submenu li{
+    border-bottom: 1px, solid #CCC;
+}
+
+#submenu li a{
+    padding: 15px 10px 0 0;
+    text-align: justify;
+    color: #222538;
+    width: 270px;
+    font-size: 12px;
+}
+
 .devis{
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Raleway', sans-serif; 
     flex-flow: column;
-    margin: 50px;
-    width: 40%;
+    width: 35%;
 }
-.Galerie{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100px;
+
+#barre{
+    margin: 0 7%;
 }
+
+.nombreCaractere{
+    align-content: flex-end;
+}
+
+#contenu{
+    margin: 5% 10% 0; text-align: justify;
+}
+
+.TEntreprise{
+    padding-bottom: 2%;
+}
+
+label{
+    margin-bottom: 5%;
+}
+
+

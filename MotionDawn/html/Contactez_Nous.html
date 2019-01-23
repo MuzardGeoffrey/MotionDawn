@@ -5,16 +5,25 @@
         <meta name="author"  content="Pierre"/>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="style_ecriture/Darleston.otf" rel="stylesheet">
-        <link href="css/css_projet.css" rel="stylesheet"/>
+<!--        <link href="css/style.css" rel="stylesheet"/>-->
+        <link href="css/responsive.css" rel="stylesheet"> 
         <title>MotionDawn - Contactez Nous</title>
     </head>    
     <body>
-        <div id="page">
-            <nav class= "menu">
-                <a href="index.html"><img id="logo" src="img/Logo.bmp" alt="logo entreprise"></a>
+        <bloc>
+            <nav>
+                <a href="index.html"><img id="logo" src='img/LogoMotionDawn.jpg' alt="Logo_MotionDawn"></a>
                 <a href="index.html">Accueil</a>
                 <img id="barre1" src=img/Barre.PNG alt="Image Barre1">
-                <a href="#evenements">Evènements</a>
+                <ul id="menu-vertical">
+               <li id="menu"><a href="#">Evènement</a>
+                  <ul id="submenu">
+                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                     <li><a href="Lancement.html">Lancements de Produits</a></li>
+                     <li><a href="TeamBuilding.html">Team Building</a></li>
+                  </ul>
+                </li>
+                </ul>
                 <img id="barre2" src=img/Barre.PNG alt="Image Barre2">
                 <a href="#galerie">Galerie</a>
                 <img id="barre3" src=img/Barre.PNG alt="Image Barre3">
@@ -24,19 +33,19 @@
                 <img id="barre5" src=img/Barre.PNG alt="Image Barre5">
                 <a href="Devis.html">Contact</a>
             </nav>
-            <form action="Contactez_Nous.html" method="POST">
-                <h1 id="titreContactezNous">Contactez Nous</h1>
+            <form class="formulaire" action="Contactez_Nous.html" method="POST">
+                <h1 class="Titre">Contactez Nous</h1>
                 <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
-                <input type="email" name="mail" id="mail" placeholder="Adresse email de contact"/>
-                <input type="text" name="objet" id="objet" placeholder="Objet"/>
-                <textarea name="information" id="information" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
-                <input type="submit" value="Envoyer" />
+                <input type="email" name="mail" id="mail" class="champs" placeholder="Adresse email de contact"/>
+                <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
+                <textarea name="information" id="information" class="champs" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
+                <input type="submit" class="boutonEnvoyer" value="Envoyer" />
             </form>
                 <footer>
                     <a href="Politique.html" title="Politique"><p>Politique de Confidentialité</p></a>
-                    <a href="Conditions.html" title="Conditions"><p>Conditions Général D"utilisation</p></a>
-                    <a href="Contactez_Nous.html" title="Contactez"><p>Contactez Nous</p></a>
+                    <a href="Conditions.html" title="Conditions"><p>Conditions Général D'utilisation</p></a>
+                    <a href="contactez_nous.html" title="Contactez"><p>Contactez Nous</p></a>
                 </footer>
-        </div>
+        </bloc>
     </body>
 </html>

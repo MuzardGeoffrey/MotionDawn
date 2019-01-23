@@ -1,62 +1,68 @@
-<!--
-/***********************************************************************************/
-/*                                                                                 */
-/*                                      ENTREPRISE                                 */
-/*                                                                                 */
-/***********************************************************************************/
--->
 <!DOCTYPE html>
 <html lang="fr">
     <head>        
-        <meta charset="utf-8"/>
-        <meta name="author"  content="Pierre"/>
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link href="style_ecriture/Darleston.otf" rel="stylesheet">
-        <link href="css/css_projet.css" rel="stylesheet"/>
-        <title>MotionDawn - Entreprise</title>
+        <meta charset="utf-8">
+        <meta name="keywords" lang="fr" content="html,php,css">
+        <meta name="author" lang="fr" content="Muzard Geoffrey">
+        <!--  IMPORT .CSS       -->
+<!--        <link href="css/style.css" rel="stylesheet">-->
+        <link href="css/responsive.css" rel="stylesheet"> 
+        <!--  IMPORT FONTS      -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800">
+        <title>MotionDawn - Devis</title>
     </head>    
     <body>
-        
-<!--Menu-->
-        
-        <bloc id="page">
-            <nav class= "menu">
-                <a href="index.html"><img id="logo" src='img/Logo.bmp' alt="logo entreprise"></a>
-                <a href="index.html">Accueil</a>
-                <img id="barre1" src=img/Barre.PNG alt="Image Barre1">
-                <a href="#evenements">Evènements</a>
-                <img id="barre2" src=img/Barre.PNG alt="Image Barre2">
-                <a href="#galerie">Galerie</a>
-                <img id="barre3" src=img/Barre.PNG alt="Image Barre3">
-                <a href="Entreprise.html">Entreprise</a>
-                <img id="barre4" src=img/Barre.PNG alt="Image Barre4">
-                <a href="Equipe.html">Equipe</a>
-                <img id="barre5" src=img/Barre.PNG alt="Image Barre5">
-                <a href="Devis.html">Contact</a>
-            </nav>
-            
-<!--Contenu de la Page-->
-            
-        <h1 id="titreEntreprise">Entreprise</h1>
-        <section class="contenu">
-            <h2 id="titre_presentation">Présentation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <div class="titre2">
-                <h2 id=titre_atout>Nos principaux atouts</h2>
-                    <p> 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                    2 - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<br>
-                    3 - Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis .<br>
-                    4 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
+        <bloc>
+<!------------------------------------------------------->
+<!--               MENU DE NAVIGATION                  -->
+<!------------------------------------------------------->        
+        <nav>
+            <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt="logo"></a>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <img src="img/Barre.PNG">
+            <ul id="menu-vertical">
+               <li id="menu"><a href="#">Evènement</a>
+                  <ul id="submenu">
+                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                     <li><a href="Lancement.html">Lancements de Produits</a></li>
+                     <li><a href="TeamBuilding.html">Team Building</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <img src="img/Barre.PNG">
+            <a href="galerie.html" title="Galerie">Galerie</a>
+            <img src="img/Barre.PNG">
+            <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
+            <img src="img/Barre.PNG">
+            <a href="Equipe.html" title="Equipe">L'équipe</a>
+            <img src="img/Barre.PNG">
+            <a href="Devis.html" title="Devis">Contact</a>
+        </nav>
+<!------------------------------------------------------->
+<!--                        Entreprise                 -->
+<!------------------------------------------------------->            
+        <h1 class="Titre">Entreprise</h1>            
+            <section id="contenu">
+                <div class="TEntreprise">
+                    <h2>Présentation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+                <div class="titreEntreprise">
+                    <h2>Nos principaux atouts</h2>
+                        <p> 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                        2 - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<br>
+                        3 - Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis .<br>
+                        4 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
             </section>
-            
-<!--Pied de Page-->
-            
-            <footer>
+<!------------------------------------------------------->
+<!--                      FOOTER                       -->
+<!------------------------------------------------------->            
+            <footer id="FEntreprise">
                 <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
                 <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
                 <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
             </footer>
-        </bloc>
+            </bloc>
     </body>
 </html>
