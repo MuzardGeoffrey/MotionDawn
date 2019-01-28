@@ -45,13 +45,16 @@ h1{
     justify-content:center;
     flex-wrap: wrap;
     color: #EA5758;
+    font-size: 45px;
 }
+/*
 .Titre{
     display: flex;
     width: 100%;
     justify-content:center;
     flex-wrap: wrap;
 }
+*/
 
 .Titre_logo{
     margin-top: 2%;
@@ -66,6 +69,19 @@ h1{
     height: 80%;
     box-shadow: 10px 0px 50px black;
 }
+
+#carrou_Galerie{
+    width: 80%;
+    height: 35%;
+}
+
+.Galerie{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
 .logo{
     margin: 0 20px;
 }
@@ -172,6 +188,7 @@ h1{
 
 .devis{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-flow: column;
     width: 35%;
@@ -195,6 +212,10 @@ h1{
 
 label{
     margin-bottom: 5%;
+}
+
+#envoyer_devis{
+  margin-bottom: 42px;  
 }
 
 footer{
@@ -241,6 +262,10 @@ footer a{
             
     }
     
+    #nav_devis{
+        height: 7%;
+    }
+    
     #NavEquipe{
         height: 5%;
         
@@ -278,7 +303,7 @@ footer a{
     
     #inauguration{
         width: 80%;
-        height: 60%;
+        height: 50%;
     }
     
     .TEntreprise{
@@ -330,9 +355,13 @@ footer a{
         box-shadow: 10px 0px 50px black;
     }
     
+    #carrou_Galerie{
+        height: 35%;
+    }
+    
     .Titre_logo{
         margin: 20px 0 20px;
-        font-size: 40px;
+        font-size: 35px;
     }
     
     .logo{
@@ -345,18 +374,13 @@ footer a{
         text-align: justify;
     }
     
-    #FEntreprise{
-        margin-top: 100px;
-    }
-    
-    #FBuilding{
-        margin-top: 10%;
-    }
-    
     .devis{
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
     }
     
     #barre{
@@ -364,12 +388,22 @@ footer a{
     }
     
     .champs{
-        padding: 10px
+        width: 60% ;
+        padding: 10px;
     }
     
-    #boutonEnvoyer{
+    #boutonEnvoyer{        
         
-        
+    }
+    
+    #envoyer_contact{
+        width: 30%;
+        height: 8%;
+    }
+    
+    #envoyer_devis{
+        width: 30%;
+        height: 4%;
     }
     
     footer{
@@ -387,5 +421,32 @@ footer a{
         text-decoration: none;
     }
     
+    #footer_Inauguration{
+        margin-bottom: 2%;
+    }
+    
+    #footer_Lancement{
+        margin-bottom: 2%;
+    }
+    
+    #footer_Building{
+        margin-bottom: 2%;
+    }    
+    
+    #footer_Galerie{
+        margin-bottom: 10%;
+    }
+    
+    #footer_Entreprise{
+        margin-bottom: 16%;   
+    }
+    
+    #footer_Equipe{
+        margin-bottom: 2%;
+    }
+    
+    #footer_Devis{
+        margin-bottom: 18%;
+    }
     
 }
