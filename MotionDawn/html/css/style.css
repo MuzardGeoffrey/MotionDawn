@@ -1,9 +1,6 @@
 *{
-	box-sizing: border-box;
-	margin: 0;
+	box-sizing: border-box; margin: 0;
 }
-
-font-family: 'Raleway', sans-serif;
 
 body{
 	display: flex;
@@ -42,6 +39,7 @@ nav a{
     margin-bottom: 10%;
 }
 h1{
+    margin-bottom: 5%;
     display: flex;
     width: 100%;
     justify-content:center;
@@ -56,6 +54,7 @@ h1{
 }
 
 .Titre_logo{
+    margin-top: 2%;
     display: flex;
     width: 100%;
     justify-content:center;
@@ -80,6 +79,7 @@ footer{
 }
 footer a{ 
     color: #EA5758;
+    text-decoration: none;
 }
 #equipe{
     display: flex;
@@ -109,7 +109,6 @@ footer a{
 .formulaire{
     display: flex;
     flex-flow: column;
-    margin: 50px
 }
 #evenement{
 	display: flex;
@@ -157,6 +156,7 @@ footer a{
 #menu-vertical li:hover ul {
     top: 20px;
     left: 0px;
+    font-size: 1px;
 }
 
 #menu.submenu{
@@ -168,9 +168,11 @@ footer a{
 }
 
 #submenu li a{
-    padding: 15px 30px 0 0;
+    padding: 15px 10px 0 0;
+    text-align: justify;
     color: #222538;
     width: 270px;
+    font-size: 12px;
 }
 
 .devis{
@@ -192,22 +194,12 @@ footer a{
     margin: 5% 10% 0; text-align: justify;
 }
 
-.titreEntreprise{
+.TEntreprise{
     padding-bottom: 2%;
 }
 
-/*
-<!------------------------------------------------------->
-<!--                       RESPONCIVE                  -->
-<!------------------------------------------------------->
-*/
-
-/*
-@media all and (max-width: 960px){
-    body{
-        width: auto;
-    }
+label{
+    margin-bottom: 5%;
 }
-*/
 
 

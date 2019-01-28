@@ -3,9 +3,10 @@
 <head>
         <meta charset="utf-8">
         <meta name="keywords" lang="fr" content="html,php,css">
-        <meta name="author" lang="fr" content="Muzard Geoffrey">
+        <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
         <!--  IMPORT .CSS       -->
-        <link href="css/style.css" rel="stylesheet">
+<!--        <link href="css/style.css" rel="stylesheet">-->
+        <link href="css/responsive.css" rel="stylesheet"> 
         <!--  IMPORT FONTS      -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -16,7 +17,7 @@
 <!------------------------------------------------------->
 <!--               MENU DE NAVIGATION                  -->
 <!------------------------------------------------------->
-        <nav>
+        <nav id="nav_devis">
             <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt="logo"></a>
             <a href="index.html" title="Accueil">Accueil</a>
             <img src="img/Barre.PNG">
@@ -30,7 +31,7 @@
                </li>
             </ul>
             <img src="img/Barre.PNG">
-            <a href="galerie.html" title="Galerie">Galerie</a>
+            <a href="Galerie.html" title="Galerie">Galerie</a>
             <img src="img/Barre.PNG">
             <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
             <img src="img/Barre.PNG">
@@ -42,78 +43,40 @@
 <!------------------------------------------------------->
 <!--                   Contactez-Nous                  -->
 <!------------------------------------------------------->
-            <section class="devis">
-                <h1>Contactez Nous</h1>
-                <label for="nom">
+            <form class="devis" method="POST">
+                <h1 class="Titre">Contactez Nous</h1>
                     <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
-                </label>
-                <label for="mail">
-                    <input type="email" name="mail" id="mail" placeholder="Adresse email de contact"/>
-                </label>
-                <label for="objet">
-                    <input type="text" name="objet" id="objet" placeholder="Objet"/>
-                </label>
-                <label for="demande">
-                    <small class="nombreCaractere">
-                        (<span data-hook="remaining">4000</span> Caractère restants)
-                    </small>
-                    <textarea name="inforamtion" id="information" placeholder="Taper votre demande" rows="15" cols="60%"></textarea>
-                </label>
-                <input type="submit" value="Envoyer" />
-            </section>
+                    <input type="email" name="mail" id="mail" class="champs" placeholder="Adresse email de contact"/>
+                    <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
+                    <textarea name="inforamtion" id="information" class="champs" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
+                <input type="submit" id="envoyer_contact" value="Envoyer" />
+            </form>
             
             <img id="barre" src="img/Barre_Contact.PNG" />
 <!------------------------------------------------------->
 <!--                        Devis                      -->
 <!------------------------------------------------------->
-            <section class="devis">
-                <h1>Devis</h1>
-                <label for="entreprise">
-                    <input type="text" name="entreprise" id="entreprise" class="entreprise" placeholder="Nom de votre Entreprise"/>
-                </label>
-                <label for="nom">
+            <form class="devis" action="Insert.php" method="POST">
+                <h1 class="Titre">Devis</h1>
+                    <input type="text" name="entreprise" id="entreprise" class="champs" placeholder="Nom de votre Entreprise"/>
                     <input type="text" name="nom" id="nom" class="champs" placeholder="Nom"/>
-                </label>
-                <label for="prenom">
                     <input type="text" name="prenom" id="prenom" class="champs" placeholder="Prenom"/>
-                </label>
-                <label for="adresse">
                     <input type="text" name="adresse" id="adresse" class="champs" placeholder="Adresse de la société"/>
-                </label>
-                <label for="code">
                     <input type="text" name="code" id="code" class="champs" placeholder="Code Postal"/>
-                </label>
-                <label for="ville">
                     <input type="text" name="ville" id="ville" class="champs" placeholder="Ville"/>
-                </label>
-                <label for="email">
                     <input type="email" name="email" id="email" class="champs" placeholder="Email"/>
-                </label>                
-                <label for="telephone">
                     <input type="text" name="telephone" id="telephone" class="champs" placeholder="Telephone"/>
-                </label>
-                <label for="date">
-                    <input type="text" name="date" id="date" placeholder="Date de l'évènement"/>
-                </label>
-                <label for="objet">
-                    <input type="text" name="objet" id="objet" placeholder="Objet"/>
-                </label>
-                <label for="adresseEvenement">
+                    <input type="text" name="date" id="date" class="champs" placeholder="Date de l'évènement"/>
+                    <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
                     <input type="text" name="adresseEvenement" id="adresseEvenement" class="champs" placeholder="Adresse de l'évènement (Facultatif)"/>
-                </label>
-                <label for="demande">
-                    <small class="nombreCaractere">
-                        (<span data-hook="remaining">4000</span> Caractère restants)
-                    </small>
-                    <textarea name="inforamtion" id="information" placeholder="Détaillez votre évènement" rows="15" cols="60%"></textarea>
-                </label>
-                <input type="submit" value="Envoyer" />
-            </section>
+                    <textarea name="information" id="information" class="champs" placeholder="Spécifiez les détailles de votre évènement" rows="15" cols="70"></textarea>
+                <input type="submit" id="envoyer_devis" value="Envoyer"/>
+            </form>
         </div>
 <!------------------------------------------------------->
 <!--                      FOOTER                       -->
 <!------------------------------------------------------->
-        <footer>
+        <footer id=footer_Devis>
             <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
             <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
             <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>

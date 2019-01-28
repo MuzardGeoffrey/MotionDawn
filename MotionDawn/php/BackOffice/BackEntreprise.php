@@ -8,7 +8,7 @@
 //         }
 //         $row++;
 //     }
-//     fclose($handle)
+//     fclose($handle);
 // }
 // else {
 //     echo "erreur de chargement";
@@ -24,12 +24,12 @@ include 'Head.php';
 include 'nav.php';
 // <!------------------------------------------------------->
 // <!--                        Entreprise                 -->
-// <!------------------------------------------------------->            
-        echo "<h1>Entreprise</h1>            
+// <!------------------------------------------------------->
+        echo "<h1>Entreprise</h1>
             <section id='contenu'>
                 <div class='titreEntreprise'>
                     <h2>Présentation</h2>
-                    <p>".."</p>
+                    <p>"."</p>
                 </div>
                 <div class='titreEntreprise'>
                     <h2>Nos principaux atouts</h2>
@@ -42,5 +42,5 @@ include 'nav.php';
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
-include 'Footer.php'; 
+include 'Footer.php';
 ?>

@@ -3,9 +3,9 @@
 <head>
         <meta charset="utf-8">
         <meta name="keywords" lang="fr" content="html,php,css">
-        <meta name="author" lang="fr" content="Muzard Geoffrey">
+        <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
         <!--  IMPORT .CSS       -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
         <!--  IMPORT FONTS      -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -22,9 +22,17 @@
             <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt=""></a>
             <a href="index.html" title="Accueil">Accueil</a>
             <img src="img/Barre.PNG">
-            <a href="evenement.html" title="Evenement">Evènement</a>
+            <ul id="menu-vertical">
+               <li id="menu"><a href="#">Evènement</a>
+                  <ul id="submenu">
+                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                     <li><a href="Lancement.html">Lancements de Produits</a></li>
+                     <li><a href="TeamBuilding.html">Team Building</a></li>
+                  </ul>
+               </li>
+            </ul>
             <img src="img/Barre.PNG">
-            <a href="galerie.html" title="Galerie">Galerie</a>
+            <a href="Galerie.html" title="Galerie">Galerie</a>
             <img src="img/Barre.PNG">
             <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
             <img src="img/Barre.PNG">
@@ -37,7 +45,7 @@
 <!------------------------------------------------------->
         <div id="realisation">
             <h1 class="Titre">Galerie</h1>
-            <img src="img/Toutou.jpg" alt="Carrousel" id="carrou">
+            <img src="img/Toutou.jpg" alt="Carrousel" id="carrou_Galerie">
             <div>
                 <img src="img/Inauguration.jpg" alt="Inauguration" class="Galerie">
                 <img src="img/Lancement.PNG" alt="Lancement" class="Galerie">
@@ -46,7 +54,7 @@
 <!------------------------------------------------------->
 <!--                      FOOTER                       -->
 <!------------------------------------------------------->
-        <footer>
+        <footer id="footer_Galerie">
             <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
             <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
             <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
