@@ -1,21 +1,5 @@
 <?php
-// $row=1;
-// if (($handle = fopen("Entreprise.csv","r")) != FALSE) {
-//     while ($data = fgetcsv($handle, 1000, ",")) != FALSE {
-//         $num = count($data);
-//         for ($i = 0; $i < $num; $i++) {
-//             echo $data[$i].' ';
-//         }
-//         $row++;
-//     }
-//     fclose($handle);
-// }
-// else {
-//     echo "erreur de chargement";
-// }
-
-
-
+$row=1;
 include 'Head.php';
 
 // <!------------------------------------------------------->
@@ -29,18 +13,62 @@ include 'nav.php';
             <section id='contenu'>
                 <div class='titreEntreprise'>
                     <h2>Présentation</h2>
-                    <p>"."</p>
+                    <p>";
+                    if (($handle = fopen("Entreprise.csv","r"))) {
+                        while ($data = fgetcsv($handle, 1024, ",")) {
+                            $num = count($data);
+                            for ($i = 0; $i < $num; $i++) {
+                                echo $data[$i].' ';
+                            }
+                            $row++;
+                        }
+                    }
+                
+                    else {
+                        echo "erreur de chargement";
+                    }
+                   echo "</p>
                 </div>
                 <div class='titreEntreprise'>
                     <h2>Nos principaux atouts</h2>
-                        <p> 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                        2 - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<br>
-                        3 - Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis .<br>
-                        4 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <p>";
+                    if (($handle = fopen("Entreprise.csv","r"))) {
+                        while ($data = fgetcsv($handle, 1024, "$")) {
+                        while ($data = fgetcsv($handle, 1024, ",")) {
+                            $num = count($data);
+                            for ($i = 0; $i < $num; $i++) {
+                                echo $data[$i].' ';
+                                
+                            }
+                            $row++;
+                        }
+                    }
+                        fclose($handle);
+                    }
+                    else {
+                        echo "erreur de chargement";
+                    }
+                    echo '</p>
+                    <form action="Modificationcsv.php" method="post" accept-charset="utf-8">
+                        <input type="submit" name="" value="">
+                    </form>
                 </div>
-            </section>";
+            </section>';
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
-include 'Footer.php';
-?>
+// include 'Footer.php';
+// ?>
+
+<?php
+// if ($_POST['prenom'] == false) {
+//     $list = ['Nom' => $_POST['nom'], 'Email' => $_POST['mail'], 'Objet' => $_POST['objet'], 'Information' => $_POST['information']];
+// }
+// else{
+// $list = ['Nom' => $_POST['nom'], 'Prenom' => $_POST['prenom'], 'Adresse' => $_POST['adresse'], 'Code' => $_POST['code'], 'Ville' => $_POST['ville'], 'Email' => $_POST['email'], 'Telephone' => $_POST['telephone'], 'Date' => $_POST['date'], 'Objet' => $_POST['objet'], 'AdresseEvenement' => $_POST['adresseEvenement'], 'Information' => $_POST['information']];
+// }
+// $fp = fopen('BD.csv','a');
+// fprintf($fp, chr(0xEF).chr(0xBB).chr(0xbf));
+// fputcsv($fp,$list);
+// fclose($fp);
+//  ?>

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if ($_POST['prenom'] == false) {
 	$list = ['Nom' => $_POST['nom'], 'Email' => $_POST['mail'], 'Objet' => $_POST['objet'], 'Information' => $_POST['information']];
 }
@@ -14,3 +14,4 @@ fputcsv($fp,$list);
 fclose($fp);
 header("location:Devis.php")
  ?>
+  -->
