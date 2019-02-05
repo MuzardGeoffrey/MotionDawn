@@ -1,7 +1,12 @@
 <?php
-$row=1;
+if (($handle = fopen("Entreprise.csv","r"))) {
+    while ($data = fgetcsv($handle, 1024, ";")) {
+            $CSV[]=$data[0];
+                    }
+}else {
+    echo "erreur de chargement";
+}
 include 'Head.php';
-
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
 // <!------------------------------------------------------->
@@ -14,46 +19,17 @@ include 'nav.php';
                 <div class='titreEntreprise'>
                     <h2>Présentation</h2>
                     <p>";
-                    if (($handle = fopen("Entreprise.csv","r"))) {
-                        while ($data = fgetcsv($handle, 1024, ",")) {
-                            $num = count($data);
-                            for ($i = 0; $i < $num; $i++) {
-                                echo $data[$i].' ';
-                            }
-                            $row++;
-                        }
-                    }
-                
-                    else {
-                        echo "erreur de chargement";
-                    }
-                   echo "</p>
+                    echo $CSV[0]; echo"</p>
                 </div>
                 <div class='titreEntreprise'>
                     <h2>Nos principaux atouts</h2>
-                        <p>";
-                    if (($handle = fopen("Entreprise.csv","r"))) {
-                        while ($data = fgetcsv($handle, 1024, "$")) {
-                        while ($data = fgetcsv($handle, 1024, ",")) {
-                            $num = count($data);
-                            for ($i = 0; $i < $num; $i++) {
-                                echo $data[$i].' ';
-                                
-                            }
-                            $row++;
-                        }
-                    }
-                        fclose($handle);
-                    }
-                    else {
-                        echo "erreur de chargement";
-                    }
-                    echo '</p>
+                        <p>";echo $CSV[1];echo '</p>
                     <form action="Modificationcsv.php" method="post" accept-charset="utf-8">
-                        <input type="submit" name="" value="">
+                        <input type="submit" name="modifier" value="modifier">
                     </form>
                 </div>
             </section>';
+
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
