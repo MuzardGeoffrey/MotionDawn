@@ -24,7 +24,7 @@ include 'nav.php';
                 <div class='titreEntreprise'>
                     <h2>Nos principaux atouts</h2>
                         <p>";echo $CSV[1];echo '</p>
-                    <form action="Modificationcsv.php" method="post" accept-charset="utf-8">
+                    <form action="ModifierEntreprise.php" method="post" accept-charset="utf-8">
                         <input type="submit" name="modifier" value="modifier">
                     </form>
                 </div>
