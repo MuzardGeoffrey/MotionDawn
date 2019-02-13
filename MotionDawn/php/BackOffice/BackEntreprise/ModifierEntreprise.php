@@ -10,6 +10,10 @@ if (($handle = fopen("Entreprise.csv","r"))) {
     echo "erreur de chargement";
 }
 include '../BackHead.php';
+// <!------------------------------------------------------->
+// <!--               MENU DE NAVIGATION                  -->
+// <!------------------------------------------------------->
+include '../Backnav.php';
 echo ' 	<form action="ModifierEntreprise_submit" method="get" accept-charset="utf-8">';
 	for ($i=0; $i < $count; $i++) {
 		echo '<label> Texte '; echo $i+1 ;
