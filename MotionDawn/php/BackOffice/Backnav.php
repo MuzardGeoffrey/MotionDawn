@@ -4,7 +4,7 @@
 
 <nav>
   <img src="../img/LogoMotionDawn.jpg" alt="">
-  <a href="../../index.php" title="Accueil">Retour au site</a>
+  <a href="../Deconnexion.php" title="Accueil">Retour au site</a>
   <img src="../img/Barre.PNG">
   <ul id="menu-vertical">
     <li id="menu"><a href="#">Evènement</a>
@@ -16,7 +16,7 @@
     </li>
   </ul>
   <img src="../img/Barre.PNG">
-  <a href="../BackEntrepriseBackEntreprise.php" title="Entreprise">L'entreprise</a>
+  <a href="../BackEntreprise/BackEntreprise.php" title="Entreprise">L'entreprise</a>
   <img src="../img/Barre.PNG">
   <a href="../BackEquipe/BackEquipe.php" title="Equipe">L'équipe</a>
   <img src="../img/Barre.PNG">

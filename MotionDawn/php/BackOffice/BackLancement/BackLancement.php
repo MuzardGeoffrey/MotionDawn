@@ -1,9 +1,16 @@
-<?php include 'Head.php';
-
+<?php 
+if (($handle = fopen("Lancement.csv","r"))) {
+    while ($data = fgetcsv($handle, 1024, ";")) {
+            $CSV[]=$data[0];
+                    }
+}else {
+    echo "erreur de chargement";
+}
+include '../BackHead.php';
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
 // <!------------------------------------------------------->
-include 'nav.php';
+include '../Backnav.php';
 // <!------------------------------------------------------->
 // <!--                     PAGE                          -->
 // <!------------------------------------------------------->
@@ -16,5 +23,5 @@ include 'nav.php';
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
-include 'Footer.php';
+include '../BackFooter.php'; 
 ?>

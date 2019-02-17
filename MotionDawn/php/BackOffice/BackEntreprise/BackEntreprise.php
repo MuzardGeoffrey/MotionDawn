@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (($handle = fopen("Entreprise.csv","r"))) {
     while ($data = fgetcsv($handle, 1024, ";")) {
             $CSV[]=$data[0];
@@ -36,5 +37,5 @@ include '../Backnav.php';
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
-// include 'Footer.php';
-// ?>
+include '../BackFooter.php';
+?>
