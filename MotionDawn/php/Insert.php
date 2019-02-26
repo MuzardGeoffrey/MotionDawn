@@ -8,9 +8,9 @@ $list = ['Nom' => $_POST['nom'], 'Prenom' => $_POST['prenom'], 'Adresse' => $_PO
 echo "<pre>";
 	var_dump($list);
 echo "<pre>";
-$fp = fopen('BD.csv','a');//
+$fp = fopen('BackOffice/Formulaire/BD.csv','a');//
 fprintf($fp, chr(0xEF).chr(0xBB).chr(0xbf));
-fputcsv($fp,$list);
+fputcsv($fp,$list,";");
 fclose($fp);
 header("location:Devis.php")
  ?>

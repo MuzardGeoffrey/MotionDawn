@@ -7,7 +7,7 @@ include 'nav.php';
 // <!------------------------------------------------------->
 // <!--                   Contactez-Nous                  -->
 // <!------------------------------------------------------->
-           echo '<form class="devis" method="POST">
+           echo '<form class="devis" action="Insert.php" method="POST">
            <h1>Contactez Nous</h1>
                <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
                <input type="email" name="mail" id="mail" placeholder="Adresse email de contact"/>

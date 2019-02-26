@@ -3,7 +3,7 @@
 <!------------------------------------------------------->
 
 <nav>
-  <img src="../img/LogoMotionDawn.jpg" alt="">
+  <img src="../img/LogoMotionDawn.jpg" alt="logo">
   <a href="../Deconnexion.php" title="Accueil">Retour au site</a>
   <img src="../img/Barre.PNG">
   <ul id="menu-vertical">
