@@ -1,11 +1,7 @@
-<?php 
+<?php
 if (($handle = fopen("TeamBuilding.csv","r"))) {
     while ($data = fgetcsv($handle, 1024, ";")) {
-            $CSV[]=$data[0];
-                    }
-}else {
-    echo "erreur de chargement";
-}
+        $_SESSION["titrenav1"] = $data[1];
 include '../BackHead.php';
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
@@ -15,18 +11,20 @@ include '../Backnav.php';
 // <!--                     PAGE                          -->
 // <!------------------------------------------------------->
         echo '<div id="evenement">
-            <h1 class="Titre">Evènement</h1>
-            <h2 class="TEvenement">Team Building</h2>
-            <p class="PEvenement">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe';
-            // .if (($handle = fopen("TeamBuilding.csv","r")) != FALSE) {
-            // 	while (($data = fgetcsv($handle,1000,",")))
-            // }
-            // .'</p>
-           echo '<img src="img/Toutou.jpg" id="inauguration">
-        </div>'
-        ;
+            <h1 class="Titre">Evenement</h1>
+            <h2 class="TEvenement">'.$data[1].'</h2>
+            <p class="PEvenement">'.$data[2].'</p>
+            <img src="'.$data[3].'" id="inauguration">
+            <form action="ModifierTeamBuilding.php" method="post" accept-charset="utf-8">
+                <input type="submit" name="modifier" value="modifier">
+            </form>
+        </div>';
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
-include '../BackFooter.php'; 
+include '../BackFooter.php';
+    }
+}else {
+    echo "erreur de chargement";
+}
 ?>

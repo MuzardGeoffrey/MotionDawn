@@ -23,7 +23,7 @@ if (($handle = fopen("Inauguration.csv","r"))) {
 					echo'<input type="text" name="formulaire'.$j.'" class="formulaire" value="'.$data[$i].'">';
 				echo '</label>';
 			}else{//si c'est une image mettre ce champ
-				echo '<input type="file" value="parcourir..." name= formulaire'.$j.'>';
+				echo '<input type="file" value="parcourir..." name= "formulaire'.$j.'"">';
 	        }
 	        $j++;
 		}
