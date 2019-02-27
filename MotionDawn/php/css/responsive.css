@@ -209,6 +209,14 @@ footer a{
     color: #EA5758;
     text-decoration: none;
 }
+table
+{
+border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+border: 1px solid black;
+}
 
 /************************************************
 *                                               *
@@ -386,6 +394,5 @@ footer a{
         font-size: 20px;
         text-decoration: none;
     }
-    
     
 }
