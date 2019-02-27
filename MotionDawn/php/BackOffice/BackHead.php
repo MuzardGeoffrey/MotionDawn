@@ -16,7 +16,8 @@
 <body>
     <bloc>
         <?php 
+        session_start();
             if ($_SESSION['CO'] != 1){
-                header('Location:../index.php');//renvoie vers la page de connexion
+                header('Location:../index.php');//renvoie vers la page de connexion si la personne n'est pas identifier
             } 
         ?>

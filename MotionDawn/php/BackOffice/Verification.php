@@ -3,29 +3,25 @@ session_start();
 $Identifiant = strtolower($_POST["username"]);//Entree formulaire nom d'utilisateur 
 $Password = $_POST["password"];// Entree du Formulaire Mot de passe
 
+if (($handle = fopen("Identifiant.csv","r"))) {
+    while ($data = fgetcsv($handle, 1024, ';')) {
 
-// echo "<pre>";
-// var_dump($resultat);
-// echo "</pre>";
-// echo "<pre>";
-// var_dump($info);
-// echo "</pre>";
-// echo $resultat[0];
-if ($Identifiant == 'jon' && $Password == 'Call')//verification que l'identifiant et le mot de passe sont bon
-{
+		// echo "<pre>";
+		// var_dump($data);
+		// echo "</pre>";
 
-	$_SESSION['CO'] = 1;
-	// $_SESSION['Identifiant']=$Identifiant ;
-	// // echo $_SESSION['Identifiant'];
-	// $_SESSION['ID']=$info[0];
-	// echo $_SESSION['ID'];
-	header("location:BackEntreprise/BackEntreprise.php");
-	// header("location:test.php");
+		if ($Identifiant === $data[1] && $Password === $data[2])//verification que l'identifiant et le mot de passe sont bon
+		{
+
+			$_SESSION['CO'] = 1;//initialise la session pour le bake office
+			header("location:BackEntreprise/BackEntreprise.php");
+			// echo "reussite";
+		}
+		else
+		{
+			header("location:index.php");
+			// echo "lose";
+		}
+	}
 }
-else
-{
-	header("location:connexion.php");
-}
-// echo $_SESSION['Identifiant'];
-
 ?>

@@ -1,26 +1,26 @@
 <?php
-if ($_SESSION['CO'] != 1){
-    header('Location:../index.php');//renvoie vers la page de connexion
-}
-$count =0;
-if (($handle = fopen("BD.csv","r"))) {
-    while ($data = fgetcsv($handle, 1024, ";")) {
-            $CSV[]=$data[0];
-            $count++;
-                    }
-}else {
-    echo "erreur de chargement";
-}
+$j = 0;
+
 include '../BackHead.php';
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
 // <!------------------------------------------------------->
 include '../Backnav.php';
-	echo "<p>";
-	for ($i=0; $i < $count; $i++) {
-		echo 'Texte '; echo $i+1; echo'</br>' ;
-			echo $CSV[$i].'</br>';
+	echo "<lu id='retour'>";
+	if (($handle = fopen("BD.csv","r"))) {
+    	while ($data = fgetcsv($handle, 1024, ";")) {
+    		$num = count($data);
+    		echo '<li class="contact">Retour Formulmaire '; echo $j+1; echo'</br>' ;
+        	for ($i = 0; $i < $num; $i++) {
+                    
+			echo $data[$i] . "</br>";
+		}
+		echo '</li>';
+	$j++;
 	}
-	echo "<p>";
+}else {
+    echo "erreur de chargement";
+}
+	echo "</lu>";
 include '../BackFooter.php'; 
  ?>

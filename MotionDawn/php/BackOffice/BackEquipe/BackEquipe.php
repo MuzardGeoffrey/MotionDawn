@@ -1,11 +1,6 @@
-<?php 
+<?php
 if (($handle = fopen("Equipe.csv","r"))) {
-    while ($data = fgetcsv($handle, 1024, ";")) {
-            $CSV[]=$data[0];
-                    }
-}else {
-    echo "erreur de chargement";
-}
+    while ($data = fgetcsv($handle, 1024, ";")) {      
 include '../BackHead.php';
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
@@ -70,5 +65,9 @@ include '../Backnav.php';
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->
-include '../BackFooter.php'; 
+include '../BackFooter.php';
+}
+}else {
+    echo "erreur de chargement";
+}
 ?>
