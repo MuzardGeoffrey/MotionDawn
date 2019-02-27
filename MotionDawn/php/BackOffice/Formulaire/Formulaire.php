@@ -1,25 +1,26 @@
 <?php
 $j = 0;
+
 include '../BackHead.php';
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
 // <!------------------------------------------------------->
 include '../Backnav.php';
-	echo "<table>";
+	echo "<lu id='retour'>";
 	if (($handle = fopen("BD.csv","r"))) {
     	while ($data = fgetcsv($handle, 1024, ";")) {
     		$num = count($data);
-    		echo '<tr><td>Retour Formulmaire '; echo $j+1;echo "</td>";
+    		echo '<li class="contact">Retour Formulmaire '; echo $j+1; echo'</br>' ;
         	for ($i = 0; $i < $num; $i++) {
                     
-			echo "<td>" . $data[$i] . "</td>";
+			echo $data[$i] . "</br>";
 		}
-		echo '</tr>';
+		echo '</li>';
 	$j++;
 	}
 }else {
     echo "erreur de chargement";
 }
-	echo "</table>";
+	echo "</lu>";
 include '../BackFooter.php'; 
  ?>
