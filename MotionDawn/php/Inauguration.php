@@ -1,5 +1,6 @@
 <?php include 'Head.php';
-
+if (($handle = fopen("BackOffice/BackInauguration/Inauguration.csv","r"))) {
+    while ($data = fgetcsv($handle, 1024, ";")) {
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
 // <!------------------------------------------------------->
@@ -9,10 +10,15 @@ include 'nav.php';
 // <!------------------------------------------------------->
         echo '<div id="evenement">
             <h1 class="Titre">Evenement</h1>
-            <h2 class="TEvenement">Inauguration de Batiments</h2>
-            <p class="PEvenement">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-            <img src="img/Inauguration.jpg" id="inauguration">
+            <h2 class="TEvenement">'.$data[1].'</h2>
+            <p class="PEvenement">'.$data[2].'</p>
+            <img src="'.$data[3].'" id="inauguration">
+
         </div>';
+    	}	
+} else {
+    echo "erreur de chargement";
+}
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->

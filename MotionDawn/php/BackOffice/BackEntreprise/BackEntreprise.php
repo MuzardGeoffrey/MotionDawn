@@ -22,9 +22,7 @@ include '../Backnav.php';
                         <p>".
                         $data[2]
                         .'</p>
-                    <form action="ModifierEntreprise.php" method="post" accept-charset="utf-8">
-                        <input type="submit" name="modifier" value="modifier">
-                    </form>
+                        <a href="ModifierEntreprise.php" title=""><input type="submit" name="modifier" value="modifier"></a>
                 </div>
             </section>';
     }

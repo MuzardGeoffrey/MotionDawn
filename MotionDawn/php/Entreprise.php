@@ -1,4 +1,9 @@
-<?php include 'Head.php';
+<?php 
+
+if (($handle = fopen("BackOffice/BackEntreprise/Entreprise.csv","r"))) {
+    while ($data = fgetcsv($handle, 1024, ';')) {
+
+include 'Head.php';
 
 // <!------------------------------------------------------->
 // <!--               MENU DE NAVIGATION                  -->
@@ -7,20 +12,25 @@ include 'nav.php';
 // <!------------------------------------------------------->
 // <!--                        Entreprise                 -->
 // <!------------------------------------------------------->            
-        echo "<h1>Entreprise</h1>            
+        echo "<h1>Entreprise</h1>
             <section id='contenu'>
                 <div class='titreEntreprise'>
                     <h2>Présentation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>".
+                    $data[1]
+                    ."</p>
                 </div>
                 <div class='titreEntreprise'>
                     <h2>Nos principaux atouts</h2>
-                        <p> 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                        2 - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<br>
-                        3 - Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis .<br>
-                        4 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <p>".
+                        $data[2]
+                        .'</p>
                 </div>
-            </section>";
+            </section>';
+    }
+}else {
+    echo "erreur de chargement";
+}
 // <!------------------------------------------------------->
 // <!--                      FOOTER                       -->
 // <!------------------------------------------------------->

@@ -12,7 +12,7 @@
         <li><a href="../BackInauguration/BackInauguration.php">Inaugurations de Batiments</a></li>
         <li><a href="../BackLancement/BackLancement.php">Lancements de Produits</a></li>
         <li><a href="../BackTeamBuilding/BackTeamBuilding.php">Team Building</a></li>
-      </ul>
+       </ul>
     </li>
   </ul>
   <img src="../img/Barre.PNG">
