@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-        <meta charset="utf-8">
-        <meta name="keywords" lang="fr" content="html,php,css">
-        <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
-        <!--  IMPORT .CSS       -->
-<!--        <link href="css/style.css" rel="stylesheet">-->
-        <link href="css/responsive.css" rel="stylesheet"> 
-        <!--  IMPORT FONTS      -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+    <head>
+            <meta charset="utf-8">
+            <meta name="keywords" lang="fr" content="html,php,css">
+            <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
+            <!--  IMPORT .CSS       -->
+            <link href="css/style.css" rel="stylesheet"> 
+            <!--  IMPORT FONTS      -->
+            <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
 
-	<title>
-		MotionDawn - Team Building
-	</title>
-</head>
-<body>
-    <bloc>
-<!------------------------------------------------------->
-<!--               MENU DE NAVIGATION                  -->
-<!------------------------------------------------------->
-        <nav>
-            <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt=""></a>
-            <a href="index.html" title="Accueil">Accueil</a>
-            <img src="img/Barre.PNG">
-            <ul id="menu-vertical">
-               <li id="menu"><a href="#">Evènement</a>
-                  <ul id="submenu">
-                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
-                     <li><a href="Lancement.html">Lancements de Produits</a></li>
-                     <li><a href="TeamBuilding.html">Team Building</a></li>
-                  </ul>
-               </li>
-            </ul>
-            <img src="img/Barre.PNG">
-            <a href="Galerie.html" title="Galerie">Galerie</a>
-            <img src="img/Barre.PNG">
-            <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
-            <img src="img/Barre.PNG">
-            <a href="Equipe.html" title="Equipe">L'équipe</a>
-            <img src="img/Barre.PNG">
-            <a href="Devis.html" title="Devis">Contact</a>
-        </nav>
-<!------------------------------------------------------->
-<!--                     PAGE                          -->
-<!------------------------------------------------------->
-        <div id="evenement">
-            <h1 class="Titre">Evènement</h1>
-            <h2 class="TEvenement">Team Building</h2>
-            <p class="PEvenement">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-            <img src="img/Toutou.jpg" id="inauguration">
-        </div>
-<!------------------------------------------------------->
-<!--                      FOOTER                       -->
-<!------------------------------------------------------->
-        <footer id="footer_Building">
-            <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
-            <a href="Conditions.html" title="Conditions">Conditions Général d'Utilisation</a>
-            <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
-        </footer>
-        </bloc>
-    </body>
+        <title>MotionDawn - Team Building</title>
+    </head>
+    <body>
+        <bloc id="team">
+    <!------------------------------------------------------->
+    <!--               MENU DE NAVIGATION                  -->
+    <!------------------------------------------------------->
+            <button class="menu">
+                <span></span>
+            </button>
+            <nav href="#" class="navbar-menu">
+                <ul class="menu-listing">
+                    <img href="index.html" src="img/Logo.bmp" alt="Logo MotionDawn" id="logo_pc"/>
+                    <img href="index.html" src="img/Logo_responsive.PNG" alt="Logo MotionDawn" id="logo_tel">
+                    <li><a href="index.html" title="Accueil">Accueil</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <ul id="menu-vertical">
+                       <li id="menu-secondaire"><button id="button_submenu">
+                           Evènement</button>
+                          <ul id="submenu">
+                             <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                             <li><a href="Lancement.html">Lancements de Produits</a></li>
+                             <li><a href="TeamBuilding.html">Team Building</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Galerie.html" title="Galerie">Galerie</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Entreprise.html" title="Entreprise">L'entreprise</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Equipe.html" title="L'équipe">L'équipe</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Devis.html" title="Devis">Contact</a></li>
+                </ul>
+            </nav>
+    <!------------------------------------------------------->
+    <!--                     PAGE                          -->
+    <!------------------------------------------------------->
+            <div id="evenement">
+                <h1 class="Titre">Evènement</h1>
+                <h2>Team Building</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
+                <img src="img/Toutou.jpg" id="inauguration">
+            </div>
+            
+            <a id="retour" href="#team">Retour vers le haut</a>
+            
+    <!------------------------------------------------------->
+    <!--                      FOOTER                       -->
+    <!------------------------------------------------------->
+            <footer>
+                <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
+                <a href="Conditions.html" title="Conditions">Conditions Général d'Utilisation</a>
+                <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
+            </footer>
+            <script src="js/menu.js"></script>
+            </bloc>
+        </body>
 </html>

@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>        
-        <meta charset="utf-8"/>
-        <meta name="author"  content="Pierre"/>
+        <meta charset="utf-8">
+        <meta name="keywords" lang="fr" content="html,php,css">
+        <meta name="author"  lang="fr" content="Muzard Geoffrey - Barnaud Pierre"/>
+        <!--  IMPORT .CSS       -->
+        <link href="css/style.css" rel="stylesheet">
+        <!--  IMPORT FONTS      -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link href="style_ecriture/Darleston.otf" rel="stylesheet">
-<!--        <link href="css/style.css" rel="stylesheet"/>-->
-        <link href="css/responsive.css" rel="stylesheet"> 
+        
         <title>MotionDawn - Contactez Nous</title>
     </head>    
     <body>
-        <bloc>
-            <nav>
-                <a href="index.html"><img id="logo" src='img/LogoMotionDawn.jpg' alt="Logo_MotionDawn"></a>
-                <a href="index.html">Accueil</a>
-                <img id="barre1" src=img/Barre.PNG alt="Image Barre1">
-                <ul id="menu-vertical">
-               <li id="menu"><a href="#">Evènement</a>
-                  <ul id="submenu">
-                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
-                     <li><a href="Lancement.html">Lancements de Produits</a></li>
-                     <li><a href="TeamBuilding.html">Team Building</a></li>
-                  </ul>
-                </li>
+        <bloc id="formulaire_contact">
+    <!------------------------------------------------------->
+    <!--               MENU DE NAVIGATION                  -->
+    <!------------------------------------------------------->
+            <button class="menu">
+                <span></span>
+            </button>
+            <nav href="#" class="navbar-menu">
+                <ul class="menu-listing">
+                    <img href="index.html" src="img/Logo.bmp" alt="Logo MotionDawn" id="logo_pc"/>
+                    <img href="index.html" src="img/Logo_responsive.PNG" alt="Logo MotionDawn" id="logo_tel">
+                    <li><a href="index.html" title="Accueil">Accueil</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <ul id="menu-vertical">
+                       <li id="menu-secondaire"><button id="button_submenu">
+                           Evènement</button>
+                          <ul id="submenu">
+                             <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                             <li><a href="Lancement.html">Lancements de Produits</a></li>
+                             <li><a href="TeamBuilding.html">Team Building</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Galerie.html" title="Galerie">Galerie</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Entreprise.html" title="Entreprise">L'entreprise</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Equipe.html" title="L'équipe">L'équipe</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Devis.html" title="Devis">Contact</a></li>
                 </ul>
-                <img id="barre2" src=img/Barre.PNG alt="Image Barre2">
-                <a href="#galerie">Galerie</a>
-                <img id="barre3" src=img/Barre.PNG alt="Image Barre3">
-                <a href="Entreprise.html">Entreprise</a>
-                <img id="barre4" src=img/Barre.PNG alt="Image Barre4">
-                <a href="Equipe.html">Equipe</a>
-                <img id="barre5" src=img/Barre.PNG alt="Image Barre5">
-                <a href="Devis.html">Contact</a>
             </nav>
-            <form class="formulaire" action="Contactez_Nous.html" method="POST">
+    <!------------------------------------------------------->
+    <!--                   Contactez-Nous                  -->
+    <!------------------------------------------------------->
+            <form id="formulaire" action="Contactez_Nous.html" method="POST">
                 <h1 class="Titre">Contactez Nous</h1>
-                <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
-                <input type="email" name="mail" id="mail" class="champs" placeholder="Adresse email de contact"/>
-                <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
-                <textarea name="information" id="information" class="champs" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
+                <input type="text" name="nom" id="nom" class="zone" placeholder="Nom de votre société"/>
+                <input type="email" name="mail" id="mail" class="zone" placeholder="Adresse email de contact"/>
+                <input type="text" name="objet" id="objet" class="zone" placeholder="Objet"/>
+                <textarea name="information" id="information" class="zone" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
                 <input type="submit" class="boutonEnvoyer" value="Envoyer" />
             </form>
+            
+            <a id="retour" href="#formulaire_contact">Retour vers le haut</a>
+            
+    <!------------------------------------------------------->
+    <!--                      FOOTER                       -->
+    <!------------------------------------------------------->
                 <footer>
                     <a href="Politique.html" title="Politique"><p>Politique de Confidentialité</p></a>
                     <a href="Conditions.html" title="Conditions"><p>Conditions Général D'utilisation</p></a>
                     <a href="contactez_nous.html" title="Contactez"><p>Contactez Nous</p></a>
                 </footer>
+            <script src="js/menu.js"></script>
         </bloc>
     </body>
 </html>

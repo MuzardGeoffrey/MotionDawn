@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-        <meta charset="utf-8">
-        <meta name="keywords" lang="fr" content="html,php,css">
-        <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
-        <!--  IMPORT .CSS       -->
-        <link href="css/responsive.css" rel="stylesheet">
-        <!--  IMPORT FONTS      -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <head>
+            <meta charset="utf-8">
+            <meta name="keywords" lang="fr" content="html,php,css">
+            <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
+            <!--  IMPORT .CSS       -->
+            <link type="text/css" rel="stylesheet" href="slick/slick-theme.css">            
+            <link type="text/css" rel="stylesheet" href="slick/slick.css">
+        
+            <link type="text/css" rel="stylesheet" href="css/style.css">
+            <!--  IMPORT FONTS      -->
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-	<title>
-		MotionDawn - Galerie
-	</title>
-</head>
-<body>
-    <bloc>
-<!------------------------------------------------------->
-<!--               MENU DE NAVIGATION                  -->
-<!------------------------------------------------------->
-        <nav>
-            <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt=""></a>
-            <a href="index.html" title="Accueil">Accueil</a>
-            <img src="img/Barre.PNG">
-            <ul id="menu-vertical">
-               <li id="menu"><a href="#">Evènement</a>
-                  <ul id="submenu">
-                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
-                     <li><a href="Lancement.html">Lancements de Produits</a></li>
-                     <li><a href="TeamBuilding.html">Team Building</a></li>
-                  </ul>
-               </li>
-            </ul>
-            <img src="img/Barre.PNG">
-            <a href="Galerie.html" title="Galerie">Galerie</a>
-            <img src="img/Barre.PNG">
-            <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
-            <img src="img/Barre.PNG">
-            <a href="Equipe.html" title="Equipe">L'équipe</a>
-            <img src="img/Barre.PNG">
-            <a href="Devis.html" title="Devis">Contact</a>
-        </nav>
-<!------------------------------------------------------->
-<!--                   CARROUSEL                       -->
-<!------------------------------------------------------->
-        <div id="realisation">
-            <h1 class="Titre">Galerie</h1>
-            <img src="img/Toutou.jpg" alt="Carrousel" id="carrou_Galerie">
+        <title>MotionDawn - Galerie</title>
+    </head>
+    <body>
+        <bloc id="galerie">
+    <!------------------------------------------------------->
+    <!--               MENU DE NAVIGATION                  -->
+    <!------------------------------------------------------->
+            <button class="menu">
+                <span></span>
+            </button>
+            <nav href="#" class="navbar-menu">
+                <ul class="menu-listing">
+                    <img href="index.html" src="img/Logo.bmp" alt="Logo MotionDawn" id="logo_pc"/>
+                    <img href="index.html" src="img/Logo_responsive.PNG" alt="Logo MotionDawn" id="logo_tel">
+                    <li><a href="index.html" title="Accueil">Accueil</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <ul id="menu-vertical">
+                       <li id="menu-secondaire"><button id="button_submenu">
+                           Evènement</button>
+                          <ul id="submenu">
+                             <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                             <li><a href="Lancement.html">Lancements de Produits</a></li>
+                             <li><a href="TeamBuilding.html">Team Building</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Galerie.html" title="Galerie">Galerie</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Entreprise.html" title="Entreprise">L'entreprise</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Equipe.html" title="L'équipe">L'équipe</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Devis.html" title="Devis">Contact</a></li>
+                </ul>
+            </nav>
+    <!------------------------------------------------------->
+    <!--                   CARROUSEL                       -->
+    <!------------------------------------------------------->
             <div>
-                <img src="img/Inauguration.jpg" alt="Inauguration" class="Galerie">
-                <img src="img/Lancement.PNG" alt="Lancement" class="Galerie">
+                <h1 class="titre_galerie">Galerie</h1>
+
+                <div class="galerie_carousel">
+                    <div>
+                        <img src="img/Toutou.jpg" alt="Toutou" class="Galerie">
+                    </div>
+                    <div>
+                        <img src="img/Inauguration.jpg" alt="Inauguration" class="Galerie">
+                    </div>
+                    <div>
+                        <img src="img/Lancement.PNG" alt="Lancement" class="Galerie">
+                    </div>
+                </div>
             </div>
-        </div>
-<!------------------------------------------------------->
-<!--                      FOOTER                       -->
-<!------------------------------------------------------->
-        <footer id="footer_Galerie">
-            <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
-            <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
-            <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
-        </footer>
-        </bloc>
-    </body>
+                
+            <a id="retour_galerie" href="#galerie">Retour vers le haut</a>
+            
+    <!------------------------------------------------------->
+    <!--                      FOOTER                       -->
+    <!------------------------------------------------------->
+            <footer>
+                <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
+                <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
+                <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
+            </footer>
+            </bloc>
+        
+            <script src="js/jquery-1.11.0.min.js"></script>
+            <script src="js/jquery-migrate-1.2.1.min.js"></script>
+            <script src="slick/slick.min.js"></script>
+        
+            <script src="js/carrousel.js"></script>            
+            <script src="js/menu.js"></script>
+        
+        </body>
 </html>

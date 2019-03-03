@@ -9,12 +9,11 @@ include 'nav.php';
 // <!--                     PAGE                          -->
 // <!------------------------------------------------------->
         echo '<div id="evenement">
-            <h1 class="Titre">Evenement</h1>
-            <h2 class="TEvenement">'.$data[1].'</h2>
-            <p class="PEvenement">'.$data[2].'</p>
-            <img src="'.$data[3].'" id="inauguration">
-
-        </div>';
+                <h1 class="Titre">Evènement</h1>
+                <h2>'.$data[1].'</h2>
+                <p>'.$data[2].'</p>
+                <img src="'.$data[3].'" alt="image_Inauguration" id="inauguration">
+              </div>';
     	}	
 } else {
     echo "erreur de chargement";

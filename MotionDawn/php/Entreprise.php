@@ -12,11 +12,11 @@ include 'nav.php';
 // <!------------------------------------------------------->
 // <!--                        Entreprise                 -->
 // <!------------------------------------------------------->            
-        echo '<h1>Entreprise</h1>
+        echo '<h1 class="titre_entreprise">L\'entreprise</h1>
             <section id="contenu">
-                <div class="titreEntreprise">
-                    <h2>Présentation</h2>
-                    <p>'.
+                <div class="presentation">
+                    <h2 class="soustitre">Présentation</h2>
+                    <p id="texte_entreprise">'.
                     $data[1]
                     .'</p>
                 </div>

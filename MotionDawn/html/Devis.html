@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+    <head>
         <meta charset="utf-8">
         <meta name="keywords" lang="fr" content="html,php,css">
         <meta name="author" lang="fr" content="Muzard Geoffrey - Barnaud Pierre">
         <!--  IMPORT .CSS       -->
-<!--        <link href="css/style.css" rel="stylesheet">-->
-        <link href="css/responsive.css" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet"> 
         <!--  IMPORT FONTS      -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 	<title>MotionDawn - Devis</title>
-</head>
-<body>
-    <bloc>
-<!------------------------------------------------------->
-<!--               MENU DE NAVIGATION                  -->
-<!------------------------------------------------------->
-        <nav id="nav_devis">
-            <a href="index.html"><img src="img/LogoMotionDawn.jpg" alt="logo"></a>
-            <a href="index.html" title="Accueil">Accueil</a>
-            <img src="img/Barre.PNG">
-            <ul id="menu-vertical">
-               <li id="menu"><a href="#">Evènement</a>
-                  <ul id="submenu">
-                     <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
-                     <li><a href="Lancement.html">Lancements de Produits</a></li>
-                     <li><a href="TeamBuilding.html">Team Building</a></li>
-                  </ul>
-               </li>
-            </ul>
-            <img src="img/Barre.PNG">
-            <a href="Galerie.html" title="Galerie">Galerie</a>
-            <img src="img/Barre.PNG">
-            <a href="Entreprise.html" title="Entreprise">L'entreprise</a>
-            <img src="img/Barre.PNG">
-            <a href="Equipe.html" title="Equipe">L'équipe</a>
-            <img src="img/Barre.PNG">
-            <a href="Devis.html" title="Devis">Contact</a>
-        </nav>
-        <div id=ContactDevis>
-<!------------------------------------------------------->
-<!--                   Contactez-Nous                  -->
-<!------------------------------------------------------->
-            <form class="devis" method="POST">
-                <h1 class="Titre">Contactez Nous</h1>
-                    <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
-                    <input type="email" name="mail" id="mail" class="champs" placeholder="Adresse email de contact"/>
-                    <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
-                    <textarea name="inforamtion" id="information" class="champs" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
-                <input type="submit" id="envoyer_contact" value="Envoyer" />
-            </form>
+    </head>
+    <body>
+        <bloc id="formulaire_devis">
+    <!------------------------------------------------------->
+    <!--               MENU DE NAVIGATION                  -->
+    <!------------------------------------------------------->
+            <button class="menu">
+                <span></span>
+            </button>
+            <nav href="#" class="navbar-menu">
+                <ul class="menu-listing">
+                    <img href="index.html" src="img/Logo.bmp" alt="Logo MotionDawn" id="logo_pc"/>
+                    <img href="index.html" src="img/Logo_responsive.PNG" alt="Logo MotionDawn" id="logo_tel">
+                    <li><a href="index.html" title="Accueil">Accueil</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <ul id="menu-vertical">
+                       <li id="menu-secondaire"><button id="button_submenu">
+                           Evènement</button>
+                          <ul id="submenu">
+                             <li><a href="Inauguration.html">Inaugurations de Batiments</a></li>
+                             <li><a href="Lancement.html">Lancements de Produits</a></li>
+                             <li><a href="TeamBuilding.html">Team Building</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Galerie.html" title="Galerie">Galerie</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Entreprise.html" title="Entreprise">L'entreprise</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Equipe.html" title="L'équipe">L'équipe</a></li>
+                    <img src="img/Vrai_barre2.PNG" class="barre-menu">
+                    <li><a href="Devis.html" title="Devis">Contact</a></li>
+                </ul>
+            </nav>
+    <!------------------------------------------------------->
+    <!--                   Contactez-Nous                  -->
+    <!------------------------------------------------------->
+            <div id="formulaire">
+                <div id=Contactez>
+                    <form action="Insert.php" method="POST">
+                        <h1 class="Titre">Contactez Nous</h1>
+                            <input type="text" name="nom" id="nom_societe" class="champs" placeholder="Nom de votre société"/>
+                            <input type="email" name="mail" id="mail" class="champs" placeholder="Adresse email de contact"/>
+                            <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
+                            <textarea name="information" id="information" class="champs" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
+                        <input type="submit" id="envoyer" value="Envoyer" />
+                    </form>                
+                </div>
+                
+        <!------------------------------------------------------->
+        <!--                        Devis                      -->
+        <!------------------------------------------------------->
+                <div id="Devis">
+                    <form action="Insert.php" method="POST">
+                        <h1 class="Titre">Devis</h1>
+                            <input type="text" name="entreprise" id="entreprise" class="champs" placeholder="Nom de votre Entreprise"/>
+                            <input type="text" name="nom" id="nom" class="champs" placeholder="Nom"/>
+                            <input type="text" name="prenom" id="prenom" class="champs" placeholder="Prénom"/>
+                            <input type="text" name="adresse" id="adresse" class="champs" placeholder="Adresse de la société"/>
+                            <input type="text" name="code" id="code" class="champs" placeholder="Code Postal"/>
+                            <input type="text" name="ville" id="ville" class="champs" placeholder="Ville"/>
+                            <input type="email" name="email" id="email" class="champs" placeholder="Email"/>
+                            <input type="text" name="telephone" id="telephone" class="champs" placeholder="Téléphone"/>
+                            <input type="text" name="date" id="date" class="champs" placeholder="Date de l'évènement"/>
+                            <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
+                            <input type="text" name="adresseEvenement" id="adresseEvenement" class="champs" placeholder="Adresse de l'évènement (Facultatif)"/>
+                            <textarea name="information" id="information" class="champs" placeholder="Spécifiez les détailles de votre évènement" rows="15" cols="70"></textarea>
+                        <input type="submit" id="envoyer" value="Envoyer"/>
+                    </form>
+                </div>
+            </div>
+            <a id="retour" href="#formulaire_devis">Retour vers le haut</a>
             
-            <img id="barre" src="img/Barre_Contact.PNG" />
-<!------------------------------------------------------->
-<!--                        Devis                      -->
-<!------------------------------------------------------->
-            <form class="devis" action="Insert.php" method="POST">
-                <h1 class="Titre">Devis</h1>
-                    <input type="text" name="entreprise" id="entreprise" class="champs" placeholder="Nom de votre Entreprise"/>
-                    <input type="text" name="nom" id="nom" class="champs" placeholder="Nom"/>
-                    <input type="text" name="prenom" id="prenom" class="champs" placeholder="Prenom"/>
-                    <input type="text" name="adresse" id="adresse" class="champs" placeholder="Adresse de la société"/>
-                    <input type="text" name="code" id="code" class="champs" placeholder="Code Postal"/>
-                    <input type="text" name="ville" id="ville" class="champs" placeholder="Ville"/>
-                    <input type="email" name="email" id="email" class="champs" placeholder="Email"/>
-                    <input type="text" name="telephone" id="telephone" class="champs" placeholder="Telephone"/>
-                    <input type="text" name="date" id="date" class="champs" placeholder="Date de l'évènement"/>
-                    <input type="text" name="objet" id="objet" class="champs" placeholder="Objet"/>
-                    <input type="text" name="adresseEvenement" id="adresseEvenement" class="champs" placeholder="Adresse de l'évènement (Facultatif)"/>
-                    <textarea name="information" id="information" class="champs" placeholder="Spécifiez les détailles de votre évènement" rows="15" cols="70"></textarea>
-                <input type="submit" id="envoyer_devis" value="Envoyer"/>
-            </form>
-        </div>
-<!------------------------------------------------------->
-<!--                      FOOTER                       -->
-<!------------------------------------------------------->
-        <footer id=footer_Devis>
-            <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
-            <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
-            <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
-        </footer>
-        </bloc>
-    </body>
+    <!------------------------------------------------------->
+    <!--                      FOOTER                       -->
+    <!------------------------------------------------------->
+            <footer>
+                <a href="Politique.html" title="Politique">Politique de Confidentialité</a>
+                <a href="Conditions.html" title="Conditions">Conditions Général D'utilisation</a>
+                <a href="Contactez_Nous.html" title="Contactez">Contactez Nous</a>
+            </footer>
+            <script src="js/menu.js"></script>
+            </bloc>
+        </body>
 </html>
