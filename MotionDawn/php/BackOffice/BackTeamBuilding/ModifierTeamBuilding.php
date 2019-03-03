@@ -20,13 +20,16 @@ if (($handle = fopen("TeamBuilding.csv","r"))) {
 			echo '</label>';
 
 			echo "<label class='formulaire TEvenement'> Texte de l'évènement ";
-					echo'<input type="textarea" name="formulaire'. 2 .'" class="formulaire" value="'.$data[2].'">';
+					echo'<textarea name=" formulaire2" class="formulaire" rows="15" cols="70">'.$data[2].'</textarea>"';
 			echo '</label>';
 
 			echo '<img src="../../'.$data[3].'" id="inauguration">';
 			echo "<label class='formulaire'> Image de l'évènement";
 				echo '<input type="file" value="parcourir..." name= "formulaire'. 3 .'"">';
-			echo "</label></div>";
+			echo "</label>";
+			echo '<input type="submit" name="Modifier" value="Modifier">
+		</form>
+			</div>';
 
 		// for ($i=1; $i < count($data); $i++) {
 
@@ -44,8 +47,6 @@ if (($handle = fopen("TeamBuilding.csv","r"))) {
 	 //        $j++;
 		// }
     }
-	echo '<input type="submit" name="Modifier" value="Modifier">
-	</form>';
 	// echo '<form action="Ajouter.php" method="post" accept-charset="utf-8">
 	// 	<input type="submit" name="Ajouter Texte" value="Ajouter Texte">
 	// 	<input type="submit" name="Ajouter Image" value="Ajouter Image">

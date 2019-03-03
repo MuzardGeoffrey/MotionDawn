@@ -12,7 +12,7 @@ include 'nav.php';
                <input type="text" name="nom" id="nom" class="champs" placeholder="Nom de votre société"/>
                <input type="email" name="mail" id="mail" placeholder="Adresse email de contact"/>
                <input type="text" name="objet" id="objet" placeholder="Objet"/>
-               <textarea name="inforamtion" id="information" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
+               <textarea name="information" id="information" placeholder="Taper votre demande" rows="15" cols="70"></textarea>
            <input type="submit" value="Envoyer" />
        </form>
        

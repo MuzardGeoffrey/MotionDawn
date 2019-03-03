@@ -7,14 +7,12 @@ include '../BackHead.php';
 // <!------------------------------------------------------->
 include '../Backnav.php';
 echo ' 	<form action="Modifier.php" method="post" accept-charset="utf-8">';
-	for ($i=1; $i < count($data); $i++) {
-		echo '<label> Texte '; echo $i ;
-			echo'<input type="text" name="formulaire'.$i.'" class="formulaire" value="'.$data[$i].'">';
+		echo '<label> Contenue de la page' ;
+			echo'<textarea name=" formulaire1" class="formulaire" rows="15" cols="70">'.$data[1].'</textarea>"';
 		echo '</label>';
 	}
 	echo '<input type="submit" name="Modifier" value="Modifier">
 	</form>';
-    }
 }else {
     echo "erreur de chargement";
 }

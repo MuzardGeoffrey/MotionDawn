@@ -9,21 +9,15 @@ include '../Backnav.php';
 // <!------------------------------------------------------->
 // <!--                        Entreprise                 -->
 // <!------------------------------------------------------->
-        echo "<h1>Entreprise</h1>
-            <section id='contenu'>
-                <div class='titreEntreprise'>
+        echo '<h1>Entreprise</h1>
+            <section id="contenu">
+                <div class="titreEntreprise">
                     <h2>Présentation</h2>
-                    <p>".
+                    <p>'.
                     $data[1]
-                    ."</p>
+                    .'</p>
                 </div>
-                <div class='titreEntreprise'>
-                    <h2>Nos principaux atouts</h2>
-                        <p>".
-                        $data[2]
-                        .'</p>
-                        <a href="ModifierEntreprise.php" title=""><input type="submit" name="modifier" value="modifier"></a>
-                </div>
+                <a href="ModifierEntreprise.php" title=""><input type="submit" name="modifier" value="modifier"></a>
             </section>';
     }
 }else {

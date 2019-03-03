@@ -1,10 +1,7 @@
 <?php
-$i = 1;
 $list[] = "decalage";
-while (isset($_POST['formulaire'.$i]))  {
-	$list[] = $_POST['formulaire'.$i];
-	$i++;
-}
+
+	$list[] = $_POST['formulaire1'];
 echo "<pre>";
 	var_dump($list);
 echo "<pre>";
